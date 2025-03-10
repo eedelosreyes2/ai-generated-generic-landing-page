@@ -29,6 +29,8 @@ function smoothScroll(event: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent
   }
   const targetElement = document.getElementById(targetId);
   if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
+    const offset = window.innerWidth >= 768 ? 80 : 0; // Apply offset only on desktop
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
   }
 }

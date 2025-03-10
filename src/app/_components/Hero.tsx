@@ -3,7 +3,7 @@
 export function Hero() {
   return (
     <section 
-      className="w-full h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white p-6 md:p-8" 
+      className="w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white p-6 md:p-8" 
       style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=1600&q=80&auto=format&fit=crop&crop=edges')" }}
     >
       <div className="bg-gray-900 bg-opacity-70 p-6 md:p-10 rounded-lg max-w-lg md:max-w-2xl mx-auto flex flex-col items-center">
